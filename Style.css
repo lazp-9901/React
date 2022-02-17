@@ -63,7 +63,7 @@
 .main_page{
     width: 1920px;
     height: 1080px;
-    background-image: url('background1.png');
+    background-image: url('images/background1.png');
     background-size: 1920px 1080px;
 }
 .navbar{
@@ -221,6 +221,19 @@
     top: -3px;
     left: 425px
 }
+.search_bar_minibox{
+    position: absolute;
+    top: 252px;
+    left: 99px;
+    border: 1px solid #0C3050;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 230px;
+    height: 40px;
+    text-align: center;
+}
 .APEC_group{
     position: relative;
     width: 1920px;
@@ -274,7 +287,7 @@
     height: 773px;
     top: 62px;
     left: -34px;
-    background-image: url('Frame2.png');
+    background-image: url('images/Frame2.png');
     background-size: 829px 773px;
     background-repeat: no-repeat;
     background-position: left center;
@@ -283,7 +296,7 @@
 .APEC_garden{
     width: 1920px;
     height:930px;
-    background-image: url('background3.png');
+    background-image: url('images/background3.png');
 }
 .APEC_garden_title{
     position: relative;
@@ -360,7 +373,7 @@
     border-top: 1px solid none;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    background-image: url('mini_back_31.png');
+    background-image: url('images/mini_back_31.png');
     background-size: 390px 280px;
 }
 .box_top2{
@@ -370,7 +383,7 @@
     border-top: 1px solid none;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    background-image: url('mini_back_32.png');
+    background-image: url('images/mini_back_32.png');
     background-size: 390px 280px;
 }
 .box_top3{
@@ -380,7 +393,7 @@
     border-top: 1px solid none;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    background-image: url('mini_back_33.png');
+    background-image: url('images/mini_back_33.png');
     background-size: 390px 280px;
 }
 .APEC_garden_search{
