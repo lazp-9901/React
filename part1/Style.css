@@ -86,17 +86,17 @@
 .nav_options ul li a{
     padding: 50px;
 }
-#apply{
+.option_bnt{
     width: 132px;
     height: 40px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border: 1px solid #0C3050;
-    border-radius: 50px;
-    background-color: #0C3050;
-    color: #fff;
+    color: white;
+	padding: 9px 25px;
+	background-color: #0C3050;
+    border: none;
+	border-radius: 50px;
+	margin-top: -20px;
+    margin-left: 40px;
+
 }
 .content1{
     position: absolute;
@@ -133,19 +133,30 @@
     position: absolute;
     left: 355px;
     top: 481px;
-    /* margin-left: 220px; */
-    border: 1px solid #0C3050;
+    border: 2px solid #0C3050;
     border-radius: 50px;
     display: flex;
     justify-content: space-around;
     text-align: center;
-    width: 230px;
-    height: 40px;
-    text-align: center;
+    padding: 15px;
+    width: 193px;
+    height: 48px;
+    background-color: #FFFFFF;
 }
-.search_bar p{
-    margin-left: 20px;
-    margin-top: 12px;
+.search_bar_APEC_city{
+    position: absolute;
+    top: 252px;
+    left: 99px;
+    border: 2px solid #0C3050;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 15px;
+    width: 193px;
+    height: 48px;
+    background-color: none;
+    background-color: #FFFFFF;
 }
 .search_icon{
     width: 50px;
@@ -169,17 +180,20 @@
     left: 556px;
     right: 556px;
     text-align: center;
+    align-items: center;
 }
 .APEC_city_title1{
     font-size: 24px;
     font-weight: bold;
     color: #CF585E;
+    margin-bottom :0px;
 }
 .APEC_city_title2{
     width: 808px;
     height: 112px;
-    font-size: 40px;
+    font-size: 48px;
     font-weight: bold;
+    margin-top: 0px;
 }
 .APEC_city_insides{
     position: relative;
@@ -200,11 +214,13 @@
     background-color: #ffff;
     box-shadow: 0px 4px 25px 0px #3707001A;
     padding: 32px;
+    size: 16px
 }
 .building1{
     position: absolute;
     top: -144px;
-    left: 128px
+    left: 128px;
+    margin-bottom: 10px;
 }
 .ellipse1{
     position: absolute;
@@ -233,6 +249,7 @@
     width: 230px;
     height: 40px;
     text-align: center;
+    background-color: #FFFFFF
 }
 .APEC_group{
     position: relative;
@@ -247,17 +264,27 @@
     left: 975px;
     right: 796px;
     top: 96px;
+    font-size: 16px
 }
 .APEC_group_title1{
     font-size: 24px;
     font-weight: bold;
     color: #CF585E;
+    margin-bottom: 0px;
 }
 .APEC_group_title2{
     width: 599px;
     height: 112px;
-    font-size: 40px;
+    font-size: 48px;
     font-weight: bold;
+    margin-top: 0px;
+    color: #0C3050;
+}
+APEC_group_title3{
+    color: #597487;
+}
+APEC_group_title4{
+    color: #597487;
 }
 .APEC_group_directional{
     display: flex;
@@ -310,11 +337,13 @@
     font-size: 24px;
     font-weight: bold;
     color: #CF585E;
+    margin-bottom: 0px;
 }
 .APEC_garden_title2{
     font-size: 48px;
     font-weight: bold;
     color: #fff;
+    margin-top: 0px;
 }
 .APEC_garden_minibox{
     position: relative;
@@ -401,7 +430,7 @@
     width: 240px;
     height: 56px;
     background-color: #CF585E;
-    border: 1px solid none;
+    border: none;
     border-radius: 50px;
     display: flex;
     justify-content: space-around;
@@ -431,6 +460,10 @@
     background-color:#EFF2F3;
     z-index: -1;
 }
+::placeholder{
+    color:#D6D6D6;
+    opacity: 1;
+}
 
 .APEC_form_title{
     position: relative;
@@ -438,6 +471,7 @@
     top: 76px;
 }
 .APEC_form_title1{
+    text-align: center;
     font-size: 24px;
     font-weight: bold;
     color: #CF585E;
@@ -445,6 +479,7 @@
 .APEC_form_title2{
     font-size: 48px;
     font-weight: bold;
+    margin-top: 0px;
 }
 .APEC_form_main{
     position: relative;
@@ -454,8 +489,9 @@
     border-radius: 20px;
     background-color: #ffff;
     text-align: center;
-    left: 555px;
-    top: 150px
+    /* left: 555px;*/
+    top: 90px ;
+    margin: 0 auto;
 }
 .form_row1{
     text-align: center;
@@ -475,6 +511,8 @@
     background-color: #EAACAD;
 }
 .APEC_info_container_top{
+    width: 1920px;
+    height: 248px;
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -501,17 +539,19 @@
     display: flex;
     margin: 0px
 }
-.subscribe_email{   
+.subscribe_email{  
+    width: 270px; 
     height: 48px;
-    border: 1px solid none;
+    border: none;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-.subscribe_button{   
-    height: 54px;
+.subscribe_button{ 
+    width: 120px;  
+    height: 48px;
     background-color:#0C3050;
     color: #fff;
-    border: 1px solid none;
+    border: none;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -542,4 +582,7 @@
     top: 489px;
     width: 495px;
     height: 475px;
+}
+.form_app_letter::placeholder{
+    text-align: top;
 }
