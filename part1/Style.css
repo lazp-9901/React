@@ -433,7 +433,7 @@ APEC_group_title4{
     border: none;
     border-radius: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     top: 180px;
     align-items: center;
     left: 840px;
@@ -463,6 +463,7 @@ APEC_group_title4{
 ::placeholder{
     color:#D6D6D6;
     opacity: 1;
+    margin-left: 20px;
 }
 
 .APEC_form_title{
@@ -515,7 +516,7 @@ APEC_group_title4{
     height: 248px;
     position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     color: #0C3050;
     margin-bottom: 0px;
 }
