@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement</title>
+    <!-- cách 1: trong thẻ head -->
+    <script>
+        function sayHello_h(){
+            alert('Hello ở head')
+        }
+    </script>
+    <!-- cách 4: trong file riêng  -->
+    <script src="./sayHello.js"></script>
+</head>
+<body>
+    <Button onClick="sayHello_h()">sayHello ở head</Button>
+    <!-- cách 2: trong thẻ body -->
+    <!-- cách 3: trong cả body và head -->
+    <script>
+        function sayHello_b(){
+            alert('Hello ở body')
+        }
+    </script>
+    <Button onClick="sayHello_b()">sayHello ở body</Button>
+    <Button onClick="sayHello_inFile()">sayHello in External File</Button>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <h2>Trong javascript có 3 loại dữ liệu cơ bản: </h2>
+    <ul>
+        <li>Number</li>
+        <li>String</li>
+        <li>Boolean</li>
+    </ul>
+    <h2>3 kiểu trivial datatypes</h2>
+    <ul>
+        <li>null</li>
+        <li>undefined</li>
+    </ul>
+    <h2>Javascript Variables</h2>
+    <p>Có thể khai báo biến theo 2 kiểu: </p>
+    <li>var name, money hoặc</li>
+    <li>var name</li>
+    <li>var money</li>  
+    <p>Biến khi khai báo có thể khởi tạo giá trị luôn hoặc gán giá trị sau và một tên biến chỉ nên sử dụng 1 lần </p>
+    <h2>JavaScript Variable Scope</h2>
+    <li>Global variables: dùng được ở mọi chỗ trong code JS</li>
+    <li>Local Variables: chỉ dùng được trong một hàm hoặc phạm vi nhất định</li>
+    <h2>JavaScript Variable Names</h2>
+    <li>Không được đặt tên biến giống với các cụm từ được định nghĩa sẵn của ngôn ngữ vidu: Break, boolean...</li>
+    <li>Không đặt tên biến bắt đầu bằng số</li>
+    <li>Tên biến bằng chữ hoa với chữ thường là khác nhau</li>
+    <h2>Ngoài kiểu khai báo bằng Var còn có hai kiểu khai báo khác là let và const</h2>
+    <h3>Var</h3>
+    <p>Khai báo biến</p>
+    <li>có thể khai báo lại biến</li>
+    <li>có thể cập nhật lại biến</li>
+    <li>có thể khai báo mà không cần gán giá trị</li>
+    <p>Hoisting</p>
+    <li>có thể sử dụng biến trước khi khai báo</li>
+    <p>Scope</p>
+    <li>global nếu khai báo ngoài hàm , local nếu khai báo trong hàm</li>
+    <h3>Let</h3>
+    <p>Khai báo biến</p>
+    <li>Không thể khai báo lại biến trong phạm vi tồn tại của biến</li>
+    <li>có thể cập nhật lại biến trong phạm vi tồn tại</li>
+    <li>có thể khai báo mà không cần gán giá trị</li>
+    <p>Hoisting</p>
+    <li>không thể sử dụng biến trước khi khai báo</li>
+    <p>Scope</p>
+    <li>block</li>
+    <h3>Const</h3>
+    <p>Khai báo biến</p>
+    <li>Không thể khai báo lại biến trong phạm vi tồn tại cảu biến</li>
+    <li>Không thể cập nhật lại biến trong phạm vi tồn tại của biến</li>
+    <li>không thể khai báo mà không cần gán giá trị</li>
+    <li>Đối với object thì không thể cập nhật nhưng biến trong object đó thì có</li>
+    <p>Hoisting</p>
+    <li>không thể sử dụng biến trước khi khai báo</li>
+    <p>Scope</p>
+    <li>block</li>
+    <p>Trường hợp local variables trùng tên với global variables thì biến đó sẽ mang giá trị của local variables</p>
+    <button onClick="checkscope()">Checkscope</button>
+    <script>
+        var myVar = 'global'
+        function checkscope(){
+            var myVar = 'local'
+            document.write(myVar);
+        }
+    </script>
+</body>
+</html>
