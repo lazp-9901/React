@@ -1,0 +1,44 @@
+body{
+    text-align: center;
+    background-color:#1E1A3C;
+    color: #FFFFFF
+}
+.inputBar{
+    list-style: none;
+    padding: 20px;
+}
+.ip_Task{
+    background-color: #acb4f0;
+    border: 0px solid #acb4f0;
+    width: 30%;
+    height: 50px
+
+}
+.bnt_addTask{
+    width:50px;
+    height:50px;
+    background-color: rgba(9, 117, 94, 0.267)
+}
+.allTasks{
+    width:30%;
+    height:300px;
+    overflow: auto;
+    display: inline-block;
+}
+.Task{
+    width: 100%;
+    height: 50px;
+    display: inline-block;
+    border-bottom: 1px solid #FFFFFF;
+
+}
+.Task >h3{
+    display: flex;
+    justify-content: space-between;
+}
+.ip_checkbox{
+    margin-right: 20px;
+}
+.optionTasks{
+    justify-content: space-between
+}
